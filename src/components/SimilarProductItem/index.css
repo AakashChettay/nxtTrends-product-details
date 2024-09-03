@@ -1,0 +1,76 @@
+/* Similar Products Section */
+.similar-product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.similar-prod-list-item {
+  width: 100%;
+  max-width: 200px;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.similar-product-img-style {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.title-heading {
+  font-size: 16px;
+  color: #171f46;
+  margin-bottom: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.brand-style {
+  font-size: 14px;
+  color: #616e7c;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.price-and-rating-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-style {
+  font-size: 16px;
+  color: #1e293b;
+  font-family: 'Roboto', sans-serif;
+}
+
+.rating-style img.star-image {
+  margin-left: 5px;
+  width: 14px;
+  height: 14px;
+}
+
+/* Responsive Design for Similar Products */
+@media screen and (min-width: 768px) {
+  .similar-product-list {
+    flex-wrap: nowrap;
+  }
+
+  .similar-prod-list-item {
+    max-width: 150px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .similar-product-list {
+    gap: 30px;
+  }
+
+  .similar-prod-list-item {
+    max-width: 180px;
+  }
+}
